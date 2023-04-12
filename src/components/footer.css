@@ -1,0 +1,130 @@
+.footer-container {
+    background: var(--black);
+    margin-top: 10rem;
+    padding: 2.5rem;
+    height: auto;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-logo {
+    width: 9.375rem;
+    margin-right: 35rem;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+}
+
+.links img {
+    margin-left: 1rem;
+    cursor: pointer;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid transparent;
+}
+
+.links img:hover {
+    padding-bottom: .5rem;
+    border-bottom: 1px solid var(--white);
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.list {
+    display: flex;
+    margin-right: 12rem;
+    text-align: center;
+}
+
+.list li a {
+    color: var(--white);
+    margin-right: 2rem;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+    padding-bottom: .5rem;
+}
+
+.list li a:hover {
+    border-bottom: 1px solid var(--white);
+    padding-bottom: .5rem;
+}
+
+.footer-menu span {
+    color: var(--dark-gray);
+}
+
+
+@media screen and (max-width: 58.75rem) {
+    .footer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        width: 18.75rem;
+        margin-right: 0;
+        margin-bottom: 23rem;
+        position: absolute;
+    }
+
+    .links {
+        position: absolute;
+        margin-top: 50rem;
+    }
+
+    .links img {
+        height: 45px;
+        margin: 1rem;
+    }
+
+    .footer-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: -5rem;
+    }
+
+    .list {
+        display: flex;
+        margin-right: 0;
+        flex-direction: column;
+    }
+
+    .list li {
+        margin-bottom: 3rem;
+    }
+
+    .list li a {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .footer-menu span {
+        position: absolute;
+        margin-top: 45rem;
+        font-size: 26px;
+        font-weight: 600;
+    }
+}
